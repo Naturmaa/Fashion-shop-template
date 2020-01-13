@@ -1,0 +1,304 @@
+* {
+    top: 0px;
+    left: 0px;
+    box-sizing: border-box;
+}
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-300px);
+    }
+    50% {
+        opacity: .9;
+        transform: translateX(50px);
+    }
+    
+    100% {
+        opacity: 0.5;
+        transform: translateX(0px);
+    }
+}
+@keyframes fadeIn {
+    0% {
+        
+        opacity: 1;
+    }
+    50% {
+   
+    }
+    80% {
+      
+    }
+    100% {
+        
+        opacity: 1;
+    }
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+#hero {
+    background-image: url(../img/Gobi2019.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+.container-1,
+.container-2,
+.container-3,
+.container-4 {
+
+    font-family: "Lato", sans-serif;
+    position: relative;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+/*hero section*/
+#hero {
+    height: 100vh;
+}
+.deed {
+    padding-top: 30px;
+
+}
+.logo {
+    width: auto;
+    position: absolute;
+    top: 15px;
+    left: 50vw;
+    transform: translateX(-50%);
+}
+.logo-img {
+    width: 15vw;
+    
+}
+.menu {
+    margin-left: 10px;
+}
+
+.menu .menu-a {
+    display: inline-block;
+    color: #000;
+    text-transform: uppercase;
+    margin-right: 20px;
+    
+    vertical-align: middle;
+    transition: all .2s ease-out;
+    text-decoration: none;
+    padding: 3px;
+    border-bottom: 1px solid transparent;
+   
+    
+
+}
+.menu .menu-a:hover {
+    animation: fadeIn .2s ease-out;
+    border-bottom: 1px solid #000;
+
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: 4vh;
+    line-height: 7vh;
+    position: relative;
+    margin-top: 30vh;
+    color: rgba(0,0,0);
+    opacity: 0.5;
+    transition: all .5s ease-out;
+    animation: moveInLeft 2s ease-in-out;
+    backface-visibility: hidden;
+    margin-left: 10px;
+    font-weight: normal;
+}
+.title:hover {
+    opacity: 1;
+}
+/*Section 3col*/
+#col .cat {
+    position: relative;
+    width: 30%;
+    height: 30vh;
+    display: inline-block;
+    float: left;
+    margin:  5vh 1vw;
+    overflow: hidden;
+}
+#col #cat {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: block;
+    transform: scale(1);
+    transition: all .3s ease-in-out; 
+    overflow: hidden;
+}
+#col #cat:hover {
+    transform: scale(1.1);
+}
+ 
+#col .cat p{
+    position: absolute;
+    margin-top: 5vw;
+    margin-left: 2vw;
+    font-size: 2vw;
+}
+
+/*Section Choose*/
+
+#choose .choose-h {
+    position: relative;
+    margin-left: 1vw;
+    font-size: 5vh;
+    color: #777;
+}
+
+#choose .card {
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 17vw;
+    height: 53vh;
+    margin-left: 1vw;
+    margin-top: 1vh;
+    margin-bottom: 8vh; 
+}
+
+#choose .inside {
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+#choose .choose {
+    width: 100%;
+    overflow: hidden;
+}
+#choose .choose .pick img{
+    width: 100%;
+    height: 100%;
+    transition: all .3s ease-in-out; 
+    padding-bottom: 3vh;
+}
+#choose .choose .pick img:hover {
+    transform: scale(1.1);
+}
+
+#choose .card .para .a-para{
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+}
+#choose .card .para .a-para:hover {
+    animation: fadeIn .2s ease-out;
+    color: rgb(115, 178, 194);
+}
+
+#choose .card .para .sale {
+    color: #777;
+
+}
+#signUp {
+    background-color: rgb(236, 235, 235);
+    height: 50vh;
+}
+#signUp .container-4 {
+    text-align: center;
+    margin-top: 10vh;
+}
+#signUp .sign-header {
+    font-size: 5vh;
+}
+#signUp .sign-para {
+    color: #777;
+}
+/* Modals*/
+.modal-1 {
+    width: 100%;
+    height: 118%;
+    background-color: rgba(119,119,119,0.5);
+    position: absolute;
+    top: 160vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+}
+.modal-content-1 {
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    opacity: 1;
+    position: relative;
+
+
+
+
+
+}
+.close {
+    position: absolute;
+    top: 0;
+    left: 93%;
+    width: 30px;
+    font-size: 42px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+
+
+
+
+
+/*Section-4*/
+
+.signUp {
+    height: 40px;
+    width: 400px;
+    margin: 5vh auto;
+    display: flex;
+    overflow: hidden;
+}
+
+.text-sign {
+    height: 100%;
+    width: 75%;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    font-size: 14px;
+    padding-left: 30px;
+    border: 1px solid #777;
+    outline: none;
+
+}
+.btn-sign {
+    height: 100%;
+    width: 25%;
+    background-color: #000;
+    border: 1px;
+    padding: 10px 10px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    text-align: center;
+    text-decoration: none;
+    color: #eee;
+    font-weight: 400;
+
+}
+.btn-sign:hover {
+    background-color: rgb(115, 178, 194);
+    animation: fadeIn .2s ease-out;
+}
+
+
+
+
+

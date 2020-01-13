@@ -1,0 +1,83 @@
+body{
+background-color: #eceaea;
+}
+.heading{
+    position: relative;
+    display: inline-block;
+    margin-top: 50px;
+
+}
+h1
+{   position: relative;
+    display: inline-block;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+}
+.create-account
+{
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    position: relative;
+    top: -60px;
+    left: 150px;
+    border-bottom: 1px solid black;
+    
+}
+.login{
+    position: relative;
+    display: inline-block;
+    float: right;
+    color: #000;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-left: 40px;
+    border-bottom: 1px solid #000;
+
+}
+.eml
+{
+    padding-top: 20px;
+    border-bottom: 1px solid #cecece;
+    width: 200px;
+    height: 20px;
+    
+}
+.pss
+{
+    padding-top: 20px;
+}
+input[type=password]
+{
+    width: 200px;
+    border: 0;
+    border-bottom: 1px solid #cecece;
+}
+.btn
+{
+    border-radius: 20px;
+    cursor: pointer ;
+    width: 100px;
+    height: 30px;
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    padding-top: 0px;
+}
+.lgin
+{
+    background-color: white;
+    padding-left: 50px;
+    position: absolute;
+    width: 350px;
+    left:400px;
+    top: 120px;
+    height: 400px;
+}
+.but
+{
+
+   padding-left: 30px;
+   padding-top: 20px;
+}
